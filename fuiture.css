@@ -1,0 +1,1307 @@
+/*
+Fuiture CSS Library
+Open-Sourced
+Author: @bedwarsmurf
+2021-2022
+
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 1px #000;
+}
+/* align the container class to have a margin on the left and right */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    max-width: 960px;
+    margin-top: 20px;
+
+}
+.container-m10 {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.container-pt10 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.container-m10-pt10 {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+/* STYLE The class center to be in the center  */
+.text-center {
+    text-align: center;
+}
+
+/* root all the colors */
+.primary {
+  color: #00bcd4;
+}
+.secondary {
+  color: #ff9800;
+}
+.tertiary {
+  color: #ff5722;
+}
+.quaternary {
+  color: #9c27b0;
+}
+.quinary {
+  color: #673ab7;
+}
+.senary {
+  color: #3f51b5;
+}
+.-septenary {
+  color: #2196f3;
+}
+.color-octonary {
+  color: #03a9f4;
+}
+.color-nonary {
+  color: #00bcd4;
+}
+.color-black {
+    color: #000;
+}
+.italic {
+    font-style: italic;
+
+}
+/* 
+Style the button to have no inside background
+and a border
+*/
+.btn-primary {
+    background-color: #00bcd4;
+    border: 1px solid #00bcd4;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #00acc1;
+    border: 1px solid #00acc1;
+    color: #fff;
+}
+.btn-primary-lg {
+    background-color: #00bcd4;
+    border: 1px solid #00bcd4;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 420px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary-lg:hover {
+    background-color: #00acc1;
+    border: 1px solid #00acc1;
+    color: #fff;
+}
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid #00bcd4;
+  border-radius: 5px;
+  color: #00bcd4;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.btn-outline-primary:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
+.btn-outline-primary-lg {
+    background-color: transparent;
+    border: 1px solid #00bcd4;
+    border-radius: 5px;
+    color: #00bcd4;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    width: 420px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-outline-primary-lg:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+.btn-primary-sm {
+    background-color: #00bcd4;
+    border: 1px solid #00bcd4;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 10px;
+    width: 160px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-outline-primary-sm {
+    background-color: transparent;
+    border: 1px solid #00bcd4;
+    border-radius: 5px;
+    color: #00bcd4;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary-sm:hover {
+    background-color: #00acc1;
+    border: 1px solid #00acc1;
+    color: #fff;
+}
+.btn-outline-primary-sm:hover {
+    background-color: #00acc1;
+    color: #fff;
+}
+
+.btn-senary {
+    background-color: #3f51b5;
+    border: 1px solid #3f51b5;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-senary:hover {
+    background-color: #3f51b5;
+    color: #fff;
+}
+.btn-senary-lg {
+    background-color: transparent;
+    border: 1px solid #3f51b5;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    width: 420px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-senary-lg:hover {
+    background-color: #3f51b5;
+    color: #fff;
+}
+.btn-outline-senary {
+    background-color: transparent;
+    border: 1px solid #3f51b5;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-outline-senary a {
+    color: #000;
+    text-decoration: none;
+}
+.btn-outline-senary:hover {
+    background-color: #3f51b5;
+    color: #fff;
+}
+.btn-outline-senary-lg {
+    background-color: transparent;
+    border: 1px solid #3f51b5;
+    border-radius: 5px;
+    color: #3f51b5;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    width: 420px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-outline-senary-lg:hover {
+    background-color: #3f51b5;
+    color: #fff;
+}
+
+.c-black {
+    background-color: #000;
+}
+.text-b {
+    color: #000;
+}
+.text-left {
+    text-align: left;
+}
+.container-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.box-text {
+    /* Make an box */
+    background-color: #fff;
+    border: 1px solid rgb(36, 47, 209);
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.box-text-senary {
+    /* Make an box */
+    background-color: #fff;
+    border: 1px solid #3f51b5;
+    border-radius: 5px;
+    padding: 10px;
+
+
+}
+/* Style the navbar */
+.nav {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+/* Make the nav brand be on the left side and the links on the right side */
+.navbar {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.navbar a {
+    float: center;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+.nav-brand {
+    font-size: 20px;
+    float: left;
+}
+.nav-link-go-back {
+    float: right;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: all 0.3s ease-in-out
+}
+
+/* When the resolution is less than 768px, make the navbar to be in the center */
+@media screen and (max-width: 768px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .nav-brand {
+        float: none;
+    }
+}
+.active {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* when active hovered reverse the colors */
+.active:hover {
+    background-color: #000;
+    color: #fff;
+}
+.active-senary {
+    background-color: #fff;
+    border: 1px solid #3f51b5;
+    border-radius: 5px;
+    padding: 10px;
+}
+.active-senary:hover {
+    background-color: #3f51b5;
+    color: #fff;
+}
+.active-primary {
+    background-color: #fff;
+    border: 1px solid #00bcd4;
+    border-radius: 5px;
+    padding: 10px;
+}
+.active-primary:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+/* make an background animation using gradient */
+.bg-gradient {
+    background: linear-gradient(to right, #3f51b5, #00bcd4);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.bg-gradient-senary {
+    background: linear-gradient(to right, #3f51b5, #00bcd4);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.bg-gradient-primary {
+    background: linear-gradient(to right, #3f51b5, #00bcd4);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+
+/* make an background animation using keyframes */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fadeIn {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+/* Make an list */
+/* make the list group in a box */
+
+.list-group {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.list-group-item {
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #000;
+}
+.list-group-item a {
+
+    color: #000;
+}
+/* make an box around the list group */
+.list-box {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 80px;
+    width: 20%;
+}
+.hr {
+    border: 1px solid #000;
+}
+.list-group-item:hover {
+    background-color: #fff;
+    color: #000;
+}
+/*
+Display the #download-button on the right side of the page
+*/
+#download-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    float: right;
+    width: 70%;
+    display: none;
+}
+/* style the tags <pre> */
+pre {
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    white-space: pre-wrap;
+    overflow-x: auto;
+
+}
+pre[data-lang]::before { content: attr(data-lang); display: block;}
+pre[data-lang]::after { content: attr(data-lang); display: block;}
+pre[data-lang] {
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+code {
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    white-space: pre-wrap;
+    overflow-x: auto;
+
+}
+/* 
+Display the #basics-content on the right side of the page
+*/
+#basics-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    float: right;
+    width: 70%;
+    display: none;
+}
+#understanding-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    float: right;
+    width: 70%;
+    display: none;
+}
+#examples-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    float: right;
+    width: 70%;
+    display: none;
+
+}
+#alerts-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    float: right;
+    width: 70%;
+    display: none;
+
+}
+#buttons-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    float: right;
+    width: 70%;
+    display: none;
+
+
+}
+#cards-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    float: right;
+    width: 70%;
+    display: none;
+}
+#dropdowns-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    float: right;
+    width: 70%;
+    display: none;
+}
+#forms-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    float: right;
+    width: 70%;
+    display: none;
+}
+/* Style the footer to be in the center-bottom of the page and make it stick to it */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+/* Style the footer links */
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
+.rounded {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 10px;
+    color: #000;
+    background-color: #fff;
+}
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.text-muted {
+    font-weight: 400;
+}
+.text-muted a {
+    color: #000;
+}
+/* make a modal box */
+.modal-content {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+.modal-header {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+.modal-footer {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+.modal-title {
+    color: #000;
+}
+.modal-body {
+    color: #000;
+}
+.modal-footer {
+    color: #000;
+}
+/* make an alert class with 7 types of colors */
+.alert {
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+.alert-primary {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+.alert-secondary {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+.alert-dark {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+.alert-light {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+.alert-success a {
+    color: #3c763d;
+}
+.alert-info a {
+    color: #31708f;
+}
+.alert-warning a {
+    color: #8a6d3b;
+}
+.alert-danger a {
+    color: #a94442;
+}
+.alert-primary a {
+    color: #31708f;
+}
+.alert-secondary a {
+    color: #31708f;
+}
+.alert-dark a {
+    color: #31708f;
+}
+.alert-light a {
+    color: #31708f;
+}
+.alert-success a:hover {
+    color: #3c763d;
+}
+.alert-info a:hover {
+    color: #31708f;
+}
+.alert-warning a:hover {
+    color: #8a6d3b;
+}
+.alert-danger a:hover {
+    color: #a94442;
+}
+.alert-primary a:hover {
+    color: #31708f;
+}
+.alert-secondary a:hover {
+    color: #31708f;
+}
+.alert-dark a:hover {
+    color: #31708f;
+}
+.alert-light a:hover {
+    color: #31708f;
+}
+.alert-success a:focus {
+    color: #3c763d;
+}
+.alert-info a:focus {
+    color: #31708f;
+}
+.alert-warning a:focus {
+    color: #8a6d3b;
+}
+.alert-danger a:focus {
+    color: #a94442;
+}
+.alert-primary a:focus {
+    color: #31708f;
+}
+.alert-secondary a:focus {
+    color: #31708f;
+}
+.alert-dark a:focus {
+    color: #31708f;
+}
+.alert-light a:focus {
+    color: #31708f;
+}
+/* make the alert appear over the content */
+.alert-dismissible {
+    padding-right: 35px;
+}
+.alert-dismissible .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: #000;
+    font-weight: 700;
+    float: right;
+    font-size: 21px;
+    font-family: serif;
+}
+.alert-dismissible .close:focus {
+    color: #000;
+}
+.alert-dismissible .close:hover {
+    color: #000;
+}
+.alert-dismissible .close:active {
+    color: #000;
+}
+/* make the alert to appear over everthing */
+.alert-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.alert-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.alert-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.alert-fixed-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.alert-fixed-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+.alert-fixed-center {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.alert-fixed-center-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+/* make an card box */
+.card {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.card-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #000;
+}
+.card-header:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.card-header:last-child {
+    border-radius: 0 0 5px 5px;
+}
+.card-header a {
+    color: #000;
+}
+.card-header a:hover {
+    color: #000;
+}
+.card-body {
+    padding: 15px;
+}
+.card-footer {
+    padding: 10px 15px;
+    border-top: 1px solid #000;
+}
+.card-footer:last-child {
+    border-radius: 0 0 5px 5px;
+}
+.card-footer a {
+    color: #000;
+}
+/* make the card class to have a place for a header with a text
+an image in the center and a footer with smaller font-weight */
+.card-text {
+    font-size: 0.9em;
+}
+.card-text a {
+    color: #000;
+}
+.card-text a:hover {
+    color: #000;
+}
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card-img-bottom {
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card-img-left {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.card-img-right {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+}
+.card-img-top-left {
+    border-top-left-radius: 5px;
+}
+.card-img-top-right {
+    border-top-right-radius: 5px;
+}
+.card-img-bottom-left {
+    border-bottom-left-radius: 5px;
+}
+.card-img-bottom-right {
+    border-bottom-right-radius: 5px;
+}
+.card-deck {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.card-deck .card {
+    margin-bottom: 15px;
+}
+.card {
+    max-width: 400px;
+}
+.card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.card-group > .card {
+    margin-bottom: 15px;
+}
+.card-group > .card:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card-group > .card:first-child .card-img-top,
+.card-group > .card:first-child .card-header {
+    border-top-right-radius: 0;
+}
+.card-w600 {
+    width: 600px;
+}
+.card-w500 {
+    width: 500px;
+}
+.card-w400 {
+    max-width: 400px;
+}
+.card-w300 {
+    max-width: 300px;
+}
+.card-w200 {
+    max-width: 200px;
+}
+.card-w100 {
+    max-width: 100px;
+}
+.card-header {
+    font-size: 10px;
+}
+.card-footer {
+    font-size: 15px;
+}
+/* create dropdowns */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-toggle {
+    font-size: 0.9em;
+}
+.dropdown-toggle:focus {
+    outline: 0;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 0.9em;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.dropdown-menu.pull-right {
+    right: 0;
+    left: auto;
+}
+.dropdown-menu .divider {
+    height: 1px;
+    margin: .5rem 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #000;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: #000;
+    background-color: #f5f5f5;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #000;
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+    color: #777;
+}
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    cursor: not-allowed;
+}
+.open > .dropdown-menu {
+    display: block;
+}
+.open > a {
+    outline: 0;
+}
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+.dropdown-menu-left {
+    right: auto;
+    left: 0;
+}
+.dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 0.9em;
+    line-height: 1.42857143;
+    color: #777;
+    white-space: nowrap;
+}
+.dropdown-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 990;
+}
+.pull-right > .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+    border-top: 0;
+    border-bottom: 4px solid;
+    content: "";
+}
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 1px;
+}
+@media (min-width: 544px) {
+    .dropdown-menu-right {
+        right: auto;
+        left: 0;
+    }
+    .dropdown-menu-left {
+        right: 0;
+        left: auto;
+    }
+}
+.btn-group,
+.btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn-group > .btn,
+.btn-group-vertical > .btn {
+    position: relative;
+    float: left;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+    min-width: 160px;
+    max-width: 600px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 0.9em;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.dropdown-toggle {
+    padding: 6px 8px;
+    font-size: 0.9em;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+
+}
+.show > .dropdown-menu {
+    display: block;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #000;
+    white-space: nowrap;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #000;
+    white-space: nowrap;
+    text-align: left;
+}
+
