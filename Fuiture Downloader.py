@@ -1,7 +1,8 @@
-# Make an application that has a button which downloads a file from the url
-# and opens it in the code editor.
+# Fuiture 
+# Author: @exeScripter
+# 2022-2023
 
-# import the necessary modules
+# Import the necessary modules
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
@@ -13,97 +14,93 @@ import requests
 import time
 import webbrowser
 
+# Create a function to download the library
+# This function will be called when the user clicks on the button
+def download_fuiture():
+    # Download the library from the url, save it to a file called "fuiture.css"
+    # and create a directory called "fuiture"
 
-# define the download_fuiture_css function
-def download_fuiture_css():
-    # set the url for the checker
-    url = 'https://raw.githubusercontent.com/exeScripter/fuiture/main/fuiture.css'
-    # if the fuiture.css file does not exist, print a message about
-    # the fuiture.css file not existing and download it from github
-    if not os.path.exists("fuiture.css"):
-        print("fuiture.css file not found!")
-        print("------------------------------------------------------")
-        print("Downloading fuiture.css...")
-        time.sleep(1.5)
-        print("------------------------------------------------------")
-        print("Fetching fuiture.css...")
-        time.sleep(1.5)
-        print("Trying to obtain connection with the server")
-        time.sleep(1.5)
-        print("------------------------------------------------------")
-        r = requests.get(url)
-        with open("fuiture.css", "wb") as f:
-            f.write(r.content)
-            print("------------------------------------------------------")
-            print("Download complete!")
-            print("------------------------------------------------------")
-            # open the downloaded file in the VSC code editor
-            webbrowser.open("fuiture.css")
-            print('Opening fuiture.css in your code editor...')
-            time.sleep(1.5)
-            print("------------------------------------------------------")
-    # if the fuiture.css file does exist, print a message about
-    # the fuiture.css file existing and check if it is up to date
+    # Create a directory called "fuiture"
+    if not os.path.exists("fuiture"):
+        os.makedirs("fuiture")
+
+    if os.path.exists("fuiture"):
+        # Ask the user if he/she wants to overwrite the library
+        overwrite = messagebox.askyesno("Overwrite", "Do you want to overwrite the library?")
+        if overwrite:
+            # Download the library
+            response = requests.get("https://raw.githubusercontent.com/exeScripter/fuiture/master/fuiture.css")
+            # Save the library to a file called "fuiture.css"
+            with open("fuiture/fuiture.css", "w") as f:
+                f.write(response.text)
+        else:
+            # Display a messagebox to tell the user that the library has not been downloaded
+            messagebox.showinfo("Downloaded", "The library has not been downloaded")
     else:
-        # print a message about the fuiture.css file existing
-        print("fuiture.css file found!")
-        print("------------------------------------------------------")
-        print("Checking if fuiture.css is up to date...")
-        time.sleep(1.5)
-        print("------------------------------------------------------")
-        # set the url for the checker
-        url = 'https://raw.githubusercontent.com/exeScripter/fuiture/main/fuiture.css'
-        # Check if the fuiture.css file is up to date
-        r = requests.get(url)
-        with open("fuiture.css", "wb") as f:
-            f.write(r.content)
-            print("------------------------------------------------------")
-            print("Up to date!")
-            print("------------------------------------------------------")
-            # open the downloaded file in the VSC code editor
-            webbrowser.open("fuiture.css")
-            print('Opening fuiture.css in your code editor...')
-            time.sleep(1.5)
-            print("------------------------------------------------------")
+        # Download the library
+        response = requests.get("https://raw.githubusercontent.com/exeScripter/fuiture/master/fuiture.css")
+        # Save the library to a file called "fuiture.css"
+        with open("fuiture/fuiture.css", "w") as f:
+            f.write(response.text)
+        # Display a messagebox to tell the user that the library has been downloaded
+        messagebox.showinfo("Downloaded", "The library has been downloaded")
 
-# create a window
+
+    # Download the library from the url, save it to a file called "fuiture.css"
+    # and create a directory called "fuiture"
+    url = "https://raw.githubusercontent.com/exeScripter/fuiture/master/fuiture.css"
+    r = requests.get(url)
+    with open("fuiture/fuiture.css", "wb") as f:
+        f.write(r.content)
+        r.version = "2.1.3"
+        # Print a message to the user
+        messagebox.showinfo("Downloaded", "The library has been downloaded")
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("The library has been downloaded successfully")
+        print("You can find it in the directory called ''fuiture''")
+        print("The downloaded version is: " + r.version + "")
+
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("You can now safely close this window")
+        print("--------------------------------------------------------------------------------------------------------------------")
+       
+
+
+
+
+
+
+# Use the tkinter library to create a window
 root = tk.Tk()
 root.title("Fuiture Downloader")
-root.geometry("500x200")
+root.geometry("350x200")
 root.resizable(False, False)
 
-# create a label
-label = ttk.Label(root, text="Welcome to Fuiture Downloader!")
+# Create a label for the window
+label = tk.Label(root, text="Fuiture Downloader", font=("Helvetica", 20))
 label.pack()
 
-# create a label
-label = ttk.Label(root, text="Made by: @exeScripter")
+# Create a label for the window
+label = tk.Label(root, text="Click on the button below to download the latest version", font=("Helvetica", 10))
 label.pack()
 
-# create a label
-label = ttk.Label(root, text="github.com/exeScripter/fuiture")
-label.pack()
-
-# create a label
-label = ttk.Label(root, text="")
-label.pack()
-
-
-# create a label
-label = ttk.Label(root, text="This application will download the current version of the fuiture.css library from github.")
-label.pack()
-
-# create a button and style it
-button = ttk.Button(root, text="Download fuiture.css", command=download_fuiture_css)
+# Create a button for then download the library
+button = tk.Button(root, text="Download", command=download_fuiture)
 button.pack()
 
 
+# Create a label for the window to show the version of the library
+label = tk.Label(root, text="Version: 2.1.3", font=("Helvetica", 10))
+label.pack()
 
+# Create a label for the window to show the date of the library
+label = tk.Label(root, text="2022-07-21", font=("Helvetica", 10))
+label.pack()
 
+# Create a label for the window to show the author of the library
+label = tk.Label(root, text="Author: @exeScripter", font=("Helvetica", 10))
+label.pack()
 
-# code to run the application
+# Run the mainloop
 root.mainloop()
-
-
-
 
