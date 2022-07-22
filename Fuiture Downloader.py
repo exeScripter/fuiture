@@ -60,8 +60,8 @@ def download_fuiture():
         # Download the library
         response = requests.get("https://raw.githubusercontent.com/exeScripter/fuiture/master/fuiture.css")
         # Save the library to a file called "fuiture.css"
-        with open("fuiture/fuiture.css", "w") as f:
-            f.write(response.text)
+        with open("fuiture/fuiture.css", "w") as j:
+            j.write(response.text)
         print("[+] Library downloaded!")
         time.sleep(1)
         # Display a messagebox to tell the user that the library has been downloaded
@@ -71,10 +71,10 @@ def download_fuiture():
     # Download the library from the url, save it to a file called "fuiture.css"
     # and create a directory called "fuiture"
     url = "https://raw.githubusercontent.com/exeScripter/fuiture/master/fuiture.css"
-    r = requests.get(url)
-    with open("fuiture/fuiture.css", "wb") as f:
-        f.write(r.content)
-        r.version = "2.1.3"
+    g = requests.get(url)
+    with open("fuiture/fuiture.css", "wb") as j:
+        j.write(g.content)
+        g.version = "2.1.3"
         print("[+] Library downloaded!")
         time.sleep(1)
         # Print a message to the user
@@ -82,14 +82,74 @@ def download_fuiture():
         print("--------------------------------------------------------------------------------------------------------------------")
         print("The library has been downloaded successfully")
         print("You can find it in the directory called ''fuiture''")
-        print("The downloaded version is: " + r.version + "")
+        print("The downloaded version is: " + g.version + "")
 
         print("--------------------------------------------------------------------------------------------------------------------")
         print("You can now safely close this window")
         print("--------------------------------------------------------------------------------------------------------------------")
 
+def download_fuiturev2():
+    print("Fuiture Downloader Logs - " + time.strftime("%d/%m/%Y"))
+    print("----------------------------------------------------")
+    print("[+] User clicked on the button")
+    # Sleep for 1 second
+    time.sleep(1)
+    print("[+] Creating directory ...")
+    time.sleep(1)
+    print("[+] Directory Created!")
+    # Download the library from the url, save it to a file called "fuiture.css"
+    # and create a directory called "fuiture"
 
+    # Create a directory called "fuiture"
+    if not os.path.exists("fuiture"):
+        # Print the current time in seconds, and the message "Creating directory...""
+        # Create the directory
+        os.makedirs("fuiture")
 
+    if os.path.exists("fuiture"):
+        time.sleep(1)
+        print("[=] Directory exists, asking user if he/she wants to overwrite the files ...")
+        # Ask the user if he/she wants to overwrite the library
+        overwrite = messagebox.askyesno("Overwrite", "Do you want to overwrite the library?")
+        if overwrite:
+            # Display the options that user choosed
+            print("[=] User choosed:", overwrite)
+            # Download the library
+            response = requests.get("https://raw.githubusercontent.com/exeScripter/fuiture/main/fuiturev2/fuiture_v2.css")
+            # Save the library to a file called "fuiture.css"
+            with open("fuiture/fuiture_beta.css", "w") as f:
+                f.write(response.text)
+        else:
+            print("[-] Error has occured, please try again!")
+            time.sleep(1)
+            # Display a messagebox to tell the user that the library has not been downloaded
+            messagebox.showinfo("Download Info", "The library has not been downloaded")
+            # Exit the program
+            exit()
+
+    else:
+        # Download the library
+        response = requests.get("https://raw.githubusercontent.com/exeScripter/fuiture/main/fuiturev2/fuiture_v2.css")
+
+    # Download the library from the url, save it to a file called "fuiture.css"
+    # and create a directory called "fuiture"
+    url = "https://raw.githubusercontent.com/exeScripter/fuiture/main/fuiturev2/fuiture_v2.css"
+    r = requests.get(url)
+    with open("fuiture/fuiture.css", "wb") as f:
+        f.write(r.content)
+        r.version = "1.2b"
+        print("[+] Library downloaded!")
+        time.sleep(1)
+        # Print a message to the user
+        messagebox.showinfo("Downloaded", "The library has been downloaded")
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("The BETA library has been downloaded successfully")
+        print("You can find it in the directory called ''fuiture''")
+        print("The downloaded version is: " + r.version + "")
+
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("You can now safely close this window")
+        print("--------------------------------------------------------------------------------------------------------------------")
 
 
 
@@ -111,6 +171,11 @@ label.pack()
 button = tk.Button(root, text="Download", command=download_fuiture)
 button.pack()
 
+# Create a button for then download the library
+button = tk.Button(root, text="Download Beta Version", command=download_fuiturev2)
+button.pack()
+
+
 # Create a label for the window to show the version of the library
 label = tk.Label(root, text="Version: 2.1.3", font=("Helvetica", 10))
 label.pack()
@@ -128,6 +193,8 @@ text.insert(tk.END, "\n")
 text.insert(tk.END, "\n[-] Deleted awkwardness")
 text.insert(tk.END, "\n[-] Fixed a bug")
 text.insert(tk.END, "\n--------------------------")
+text.insert(tk.END, "\n[+] Released a Beta Version of Fuiture v2 avaible to download here")
+
 
 
 # Create a label for the window to show the date of the library
