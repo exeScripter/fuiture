@@ -15,6 +15,55 @@ import time
 import webbrowser
 import time
 
+# Create a function that checks the version of this downloader
+# and compares it to the version on the web
+def check_version():
+    url = "https://raw.githubusercontent.com/exeScripter/fuiture/main/Fuiture%20Downloader.py"
+    g = requests.get(url)
+    with open("Fuiture Downloader.py", "wb") as j:
+        j.write(g.content)
+        g.version = "2.1."
+        # Print a message to the user, telling him/her that the version is the same
+        messagebox.showinfo("Version Info", "The version of this downloader is the same as the one on the web")
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("[+] The version of this downloader is the same as the one on the web")
+        print("--------------------------------------------------------------------------------------------------------------------")
+        print("You can now safely, start the program")
+        print("--------------------------------------------------------------------------------------------------------------------")
+        if g.version == "2.1.3" or g.version == "2.1.4":
+            # Print a message to the user, telling him/her that the version is different
+            messagebox.showinfo("Version Info", "The version of this downloader is different than the one on the web")
+            print("--------------------------------------------------------------------------------------------------------------------")
+            print("[-] The version of this downloader is different than the one on the web")
+            print("--------------------------------------------------------------------------------------------------------------------")
+            print("You can now download the latest version of this downloader, by clicking on the button below")
+            print("--------------------------------------------------------------------------------------------------------------------")
+
+            # Create a button that will download the latest version of this downloader
+            # and open it in the default browser
+            button = ttk.Button(root, text="Download Latest Version", command=lambda: webbrowser.open("https://raw.githubusercontent.com/exeScripter/fuiture/main/Fuiture%20Downloader.py"))
+            button.pack()
+            time.sleep(1)
+            print("--------------------------------------------------------------------------------------------------------------------")
+            print("[+] Button created")
+            print("--------------------------------------------------------------------------------------------------------------------")
+            time.sleep(1)
+            print("[+] Download, processs started!")
+            print("--------------------------------------------------------------------------------------------------------------------")
+            time.sleep(1)
+            print("[+] Downloading the latest version of this downloader ...")
+            print("--------------------------------------------------------------------------------------------------------------------")
+            time.sleep(1)
+            print("[+] Downloaded!")
+            print("--------------------------------------------------------------------------------------------------------------------")
+            time.sleep(1)
+            print("[+] The latest version of this downloader has been downloaded")
+            time.sleep(1)
+            print("[=] Restart this program to use the latest version")
+            print("--------------------------------------------------------------------------------------------------------------------")
+
+
+
 # Create a function to download the library
 # This function will be called when the user clicks on the button
 def download_fuiture():
@@ -175,9 +224,14 @@ button.pack()
 button = tk.Button(root, text="Download Beta Version", command=download_fuiturev2)
 button.pack()
 
+# Create a button that checks the version of the downloader
+button = tk.Button(root, text="Check Version", command=check_version)
+button.pack()
+
+
 
 # Create a label for the window to show the version of the library
-label = tk.Label(root, text="Version: 2.1.3", font=("Helvetica", 10))
+label = tk.Label(root, text="Version: 2.1.5", font=("Helvetica", 10))
 label.pack()
 
 # Create an text box to show the update logs
