@@ -22,7 +22,7 @@ def check_version():
     g = requests.get(url)
     with open("Fuiture Downloader.py", "wb") as j:
         j.write(g.content)
-        g.version = "2.1."
+        g.version = "2.1.5"
         # Print a message to the user, telling him/her that the version is the same
         messagebox.showinfo("Version Info", "The version of this downloader is the same as the one on the web")
         print("--------------------------------------------------------------------------------------------------------------------")
@@ -61,7 +61,7 @@ def check_version():
             time.sleep(1)
             print("[=] Restart this program to use the latest version")
             print("--------------------------------------------------------------------------------------------------------------------")
-
+            time.sleep(3)
 
 
 # Create a function to download the library
