@@ -22,7 +22,7 @@ def check_version():
     g = requests.get(url)
     with open("Fuiture Downloader.py", "wb") as j:
         j.write(g.content)
-        g.version = "2.1.5"
+        g.version = "2.1."
         # Print a message to the user, telling him/her that the version is the same
         messagebox.showinfo("Version Info", "The version of this downloader is the same as the one on the web")
         print("--------------------------------------------------------------------------------------------------------------------")
@@ -61,7 +61,7 @@ def check_version():
             time.sleep(1)
             print("[=] Restart this program to use the latest version")
             print("--------------------------------------------------------------------------------------------------------------------")
-            time.sleep(3)
+
 
 
 # Create a function to download the library
@@ -122,8 +122,12 @@ def download_fuiture():
     url = "https://raw.githubusercontent.com/exeScripter/fuiture/master/fuiture.css"
     g = requests.get(url)
     with open("fuiture/fuiture.css", "wb") as j:
+        # If the fuiture_v2.css file exists, delete it
+        if os.path.exists("fuiture/fuiture_v2.css"):
+            os.remove("fuiture/fuiture_v2.css")
+            
         j.write(g.content)
-        g.version = "2.1.3"
+        g.version = "2.1.5"
         print("[+] Library downloaded!")
         time.sleep(1)
         # Print a message to the user
@@ -168,6 +172,10 @@ def download_fuiturev2():
             # Save the library to a file called "fuiture.css"
             with open("fuiture/fuiture_beta.css", "w") as f:
                 f.write(response.text)
+            # If the fuiture.css file exists then delete it
+            if os.path.exists("fuiture/fuiture.css"):
+                os.remove("fuiture/fuiture.css")
+
         else:
             print("[-] Error has occured, please try again!")
             time.sleep(1)
